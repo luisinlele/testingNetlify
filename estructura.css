@@ -1,0 +1,220 @@
+﻿*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+body {	
+	text-align: center;
+	margin: 10px;			
+}
+	
+
+/* CAJAS */
+div {
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: 2px solid rgb(0,0,255);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgb(255,0,0);
+}
+
+.containerBiografia {
+    
+}
+
+.containerFotograma {
+    
+}
+
+.cajaTitulo {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+}
+
+.cajaImagenesRepresentativas {
+    margin-top: 200px;
+}
+
+.cajaImagenDirector {
+    
+}
+
+.cajaImagenDirector2 {
+    display: none;
+}
+
+.cajaBiografia {
+
+}
+
+.cajaFilmografia {
+    
+}
+
+.cajaFotograma {
+
+}
+
+#cajaEnlace {
+    
+}
+
+.cajaRedes{
+
+}
+
+.cajaCopyright {
+    
+}
+
+
+
+/* IMÁGENES */
+.img {
+    width: 100%;
+}
+
+.fotoRepresentativa{
+    width:33.3%;
+	max-width:240px;
+}
+
+.fotoDirector {
+    width: 100%;
+    max-width: 300px;
+}
+
+.fotoDirector2 {
+    width: 100%;
+    max-width: 300px;
+}
+
+.fotograma {
+    max-width: 300px;
+}
+
+.fotograma1 {
+
+}
+
+.fotograma2 {
+
+}
+
+.fotograma3 {
+    
+}
+
+.fotograma4 {
+    
+}
+
+.fotograma5 {
+    
+}
+
+.fotoRedes{
+    width: 3rem;
+}
+
+.videoEscena {
+	width: 100%;
+	max-width: 600px;
+}
+
+
+/* TEXTOS */
+p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+
+.rotulo {
+    text-align: center;
+    padding-bottom: 10px;
+    text-indent: 0px;
+    text-decoration: underline;
+}
+
+.textoFilmografia {
+    text-align: center;
+    text-indent: 0px;
+}
+
+.pieFoto{
+	text-align: center;
+}
+
+.textoCopyright {
+    text-align: right;
+}
+
+
+/* TABLET DESDE 460 HASTA 780PX */
+@media screen and (min-width:460px) {
+    
+    .containerBiografia {
+        flex-direction: row;
+    }
+    
+    .containerFotograma {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .cajaImagenDirector {
+        min-width: 25%;
+    }
+    
+    .fotograma {
+        max-width: 250px;
+    }
+    
+    .cajaImagenesRepresentativas {
+    margin-top: 250px;
+}
+}
+
+/* PC DESDE 780 HASTA 1080PX */
+@media screen and (min-width:780px) {
+    .cajaImagenDirector2 {
+        display: block;
+    }
+    .cajaImagenDirector2 {
+        min-width: 25%;
+    }
+    
+    .cajaImagenesRepresentativas {
+    margin-top: 150px;
+}
+}
+
+/* PC A PARTIR DE 1080PX */
+@media screen and (min-width:1080px) {
+    .containerFotograma {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+
+
+
+

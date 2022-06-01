@@ -1,0 +1,128 @@
+﻿@font-face {
+    font-family: "fuenteTitulo";
+    src: url("fuente/tobago/TobagoPoster.ttf");
+}
+
+html {
+	font-size: 100%;
+}
+
+:root {
+    /* COLORES */
+	--colorFondoTotal: #FFA759;
+	--colorFondoCajas: #B36B2D;
+    --colorTitulo: #167E94;
+    --colorRotulo: #6038E0;
+	--colorTexto: black;
+	--colorPieFoto: #4FC7E0;
+    
+    /* TAMAÑOS */
+    --sizeTituloPhone: 2.5rem;
+    --sizeTitulo: 5rem;
+    --sizeRotulo: 1.6rem;
+    --sizeRotuloTablet: 1.3rem;
+    --sizeTexto: 1rem;
+    --sizePieFoto: 0.7rem;
+}
+
+body {	
+	background-color: var(--colorFondoTotal);
+    
+}
+	
+div {
+	background-color: var(--colorFondoCajas);
+}
+
+
+/* TEXTOS */
+p {
+    font-family: Arial, sans-serif;
+    color: var(--colorTexto);
+    font-size: var(--sizeTexto);
+}
+
+.titulo {
+    font-family: fuenteTitulo, sans-serif;
+    font-size: var(--sizeTituloPhone);
+    color: black;
+}
+
+.rotulo{
+    font-family: Verdana, Arial, sans-serif;
+    color: var(--colorRotulo);
+    font-size: var(--sizeRotulo);
+}
+
+.pieFoto {
+	font-family: Verdana, sans-serif;
+    font-size: var(--sizePieFoto);
+	color:var(--colorPieFoto);
+	font-style: italic;
+}
+
+.textoCopyright {
+    font-size: var(--sizePieFoto);
+    font-style: italic;
+}
+
+/* CAJAS */
+.cajaTitulo {
+    
+}
+
+.cajaImagenesRepresentativas {
+    
+}
+
+.cajaImagenDirector {
+    
+}
+
+.cajaImagenDirector2 {
+    
+}
+
+.cajaFilmografia {
+    
+}
+
+.cajaFotograma {
+    
+}
+
+.cajaEnlace {
+    
+}
+
+.cajaCopyright {
+    
+}
+
+
+
+
+
+/* TABLET DESDE 460 HASTA 780 PX */
+@media screen and (min-width:460px) {
+    html {
+        font-size: 90%;
+    }
+    .titulo {
+    font-size: var(--sizeTitulo);
+    }
+}
+
+/* PC DESDE 780 HASTA 1080PX */
+@media screen and (min-width:780px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+/* PC A PARTIR DE 1080PX */
+@media screen and (min-width:1080px) {
+    html {
+        font-size: 75%;
+    }
+}
